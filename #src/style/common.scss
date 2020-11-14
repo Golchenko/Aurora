@@ -11,16 +11,31 @@
     overflow: hidden;
 }
 
-body {
+body, html {
     min-width: 320px;
-
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: $white;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+.container {
+    width: 894px;
+    margin: 0 auto;    
+}
+
+.full-width {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+
 
 
 

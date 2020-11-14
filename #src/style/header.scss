@@ -1,0 +1,138 @@
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header-top__button {
+  padding: 3px 0 3px 5px;
+  text-decoration: none;
+  color: $black;
+}
+
+.header-top__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+header,
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header__background {
+  background-image: url(/img/img-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(51, 51, 51, 0.35) 0%,
+    rgba(27, 27, 27, 0.13) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.header-main__logo {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  color: $white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.search__input {
+  width: 584px;
+  height: 48px;
+  background-color: rgba(247, 247, 247, 0.3);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: $white;
+  font-size: 23px;
+  padding: 0 55px 0 15px;
+
+  &::placeholder {
+    color: $white;
+    font-size: 18px;
+  }
+}
+
+.header__search {
+  position: relative;
+}
+
+.search__button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 10px;
+}
+
+.header-main__user-nav {
+  color: $white;
+  font-weight: 600;
+
+  & a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  & .user-nav__link {
+    font-size: 15px;
+  }
+}
+
+.user-nav__cart {
+  padding-left: 15px;
+}
+
+.user-nav__separator {
+  padding: 0 10px;
+}
+
+.header-bottom__site-nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.site-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include reset-list;
+}
+
+.site-nav__item {
+  margin-right: 15px;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

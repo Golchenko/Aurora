@@ -1,9 +1,30 @@
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: "CormorantGaramond";
   font-display: swap;
-  src: url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal; }
+  src: url("../fonts/CormorantGaramond-Bold.woff") format("woff"), url("../fonts/CormorantGaramond-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: Bold; }
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: Medium; }
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-Medium.woff") format("woff"), url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: SemiBold; }
+
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: Bold; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -18,9 +39,140 @@
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-body {
-  min-width: 320px; }
+body, html {
+  min-width: 320px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  background-color: #ffffff; }
 
 img {
   max-width: 100%;
   height: auto; }
+
+.container {
+  width: 894px;
+  margin: 0 auto; }
+
+.full-width {
+  padding-left: 24px;
+  padding-right: 24px; }
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative; }
+
+.header-top__button {
+  padding: 3px 0 3px 5px;
+  text-decoration: none;
+  color: #000000; }
+
+.header-top__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px; }
+
+header,
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+.header__background {
+  background-image: url(/img/img-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative; }
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.35) 0%, rgba(27, 27, 27, 0.13) 50%, rgba(0, 0, 0, 0) 100%); }
+
+.header-main__logo {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700; }
+
+.search__input {
+  width: 584px;
+  height: 48px;
+  background-color: rgba(247, 247, 247, 0.3);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 0 55px 0 15px; }
+  .search__input::-moz-placeholder {
+    color: #ffffff;
+    font-size: 18px; }
+  .search__input:-ms-input-placeholder {
+    color: #ffffff;
+    font-size: 18px; }
+  .search__input::placeholder {
+    color: #ffffff;
+    font-size: 18px; }
+
+.header__search {
+  position: relative; }
+
+.search__button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 10px; }
+
+.header-main__user-nav {
+  color: #ffffff;
+  font-weight: 600; }
+  .header-main__user-nav a {
+    text-decoration: none;
+    color: #ffffff; }
+  .header-main__user-nav .user-nav__link {
+    font-size: 15px; }
+
+.user-nav__cart {
+  padding-left: 15px; }
+
+.user-nav__separator {
+  padding: 0 10px; }
+
+.header-bottom__site-nav {
+  width: 50%;
+  margin: 0 auto; }
+
+.site-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.site-nav__item {
+  margin-right: 15px; }
+
+.site-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px; }
