@@ -191,3 +191,38 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.subscription {
+  margin-top: 35px; }
+
+.subscription__text {
+  text-align: center; }
+
+.subscription__form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px; }
+
+.form__input {
+  width: 334px;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid #e1e0e1;
+  padding: 0 15px;
+  outline: none;
+  color: #4a4a4a;
+  margin-right: 15px; }
+
+.form__button {
+  width: 94px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer; }
