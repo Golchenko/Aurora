@@ -89,13 +89,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 97%;
   position: relative; }
 
 .header-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; }
+
+.gradient {
   background: linear-gradient(to bottom, rgba(51, 51, 51, 0.35) 0%, rgba(27, 27, 27, 0.13) 50%, rgba(0, 0, 0, 0) 100%); }
 
 .header-main__logo {
@@ -105,7 +107,7 @@ body {
   font-weight: 700; }
 
 .search__input {
-  width: 584px;
+  width: 100%;
   height: 48px;
   background-color: rgba(247, 247, 247, 0.3);
   border: none;
@@ -125,7 +127,9 @@ body {
     font-size: 18px; }
 
 .header__search {
-  position: relative; }
+  position: relative;
+  width: 35%;
+  margin-right: 35px; }
 
 .search__button {
   border: none;
@@ -136,7 +140,7 @@ body {
   position: absolute;
   content: "";
   top: 11px;
-  right: 10px; }
+  right: -53px; }
 
 .header-main__user-nav {
   color: #ffffff;
@@ -154,19 +158,20 @@ body {
   padding: 0 10px; }
 
 .header-bottom__site-nav {
-  width: 50%;
   margin: 0 auto; }
 
 .site-nav__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none; }
 
 .site-nav__item {
-  margin-right: 15px; }
+  margin-right: 35px; }
+  .site-nav__item:last-child {
+    margin-right: 0; }
 
 .site-nav__link {
   text-decoration: none;
@@ -176,3 +181,13 @@ body {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 1px; }
+
+.main-img__text {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
