@@ -1,0 +1,132 @@
+.footer {
+  background-color: $gray;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2%;
+  margin-bottom: 40px;
+
+  @media (max-width: 955px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 3%;
+    justify-content: center;
+  }
+  @media (max-width: 684px) {
+    display: block;
+  }
+}
+
+.footer__socials {
+  @media (max-width: 955px) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 30px;
+
+    .column__title {
+      display: none;
+    }
+  }
+  @media (max-width: 684px) {
+    padding: 0 130px;
+  }
+
+}
+
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column__list {
+  @include reset-list;
+}
+
+.column__title {
+  font-family: "CormorantGaramond";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 24px 0;
+}
+
+.column__item {
+  padding-bottom: 6px;
+  
+}
+
+.column__link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 400;
+  cursor: pointer;
+  font-style: 13px;
+
+  &:hover {
+    color: $light-black;
+  }
+}
+
+
+
+.footer-bottom__copyright {
+  display: block;
+  text-align: center;
+}
+
+.column__link .fa-lg {
+  font-size: 1.5em;
+}
+
+.footer-bottom__copyright {
+  padding-bottom: 15px;
+  font-size: 11px;
+}
+
+.panel {
+  @media (max-width: 684px) {
+    display: none;
+
+    &.visible {
+      padding-top: 25px;
+      padding-left: 64px;
+    }
+    .column__item {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.accordion {
+  @media (max-width: 684px) {
+    cursor: pointer;
+    border-bottom: 1px solid #e1e0e1;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "\f054";
+      font-family: FontAwesome;
+      font-weight: 400;
+      color: $black;
+      right: 32px;
+      top: 25px;
+    }
+
+    &.active::after {
+      transform: rotate(90deg);
+    }
+  }
+}
