@@ -21,7 +21,7 @@ for (i = 0; i < acc.length; i++) {
 $(document).ready(function () {
   $(".burger").click(function (event) {
     $(
-      ".site-nav__list,.header__background,.site-nav__close"
+      ".site-nav__list,.nav-bg,.site-nav__close"
     ).toggleClass("site-nav--active");
   });
 });
@@ -29,7 +29,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".site-nav__close").click(function (event) {
     $(
-      ".site-nav__list,.header__background,.site-nav__close"
+      ".site-nav__list,.nav-bg,.site-nav__close"
     ).toggleClass("site-nav--active");
   });
 });
