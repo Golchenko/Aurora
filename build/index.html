@@ -13,56 +13,81 @@
 
 <body>
     <header>
-        <div class="header-top full-width">
-            <p class="header-top__text">We deliver Worlwide</p>
-            <i class="fa fa-map-marker"></i>
-            <a class=" header-top__button" href="#">Our stores</a>
-        </div>    
-        <div class="header__background">
-            <div class="gradient">
-            <div class="header-main full-width">
-                <h1 class="header-main__logo">Aurora</h1>
-                    <form class="header__search" action="#">
-                        <input class="search__input" type="text" name="search" placeholder="What are you looking for?">
-                        <button class="search__button" type="submit" aria-label="Search"><i class="fa fa-search fa-2x"></i></button>
-                      </form>
-                <div class="header-main__user-nav">
-                    <a href="#" class="user-nav__link">Sign in</a>
-                    <span class="user-nav__separator"> | </span>
-                    <a href="#" class="user-nav__link">Register</a>
-                    <a href="#" class="user-nav__cart" aria-label="Cart"><i class="fa fa-shopping-bag fa-2x"></i></a>
-                </div>
+      <div class="header-top full-width">
+        <p class="header-top__text">We deliver Worlwide</p>
+        <i class="fa fa-map-marker"></i>
+        <a class="header-top__button" href="#">Our stores</a>
+      </div>
+      <div class="header__background">
+        <div class="gradient">
+          <div class="header-main full-width">
+              <div class="mobile-buttons">
+                  <span class="burger fa fa-navicon fa-2x"></span>
+                  <span class="search fa fa-search fa-2x"></span>
+              </div>
+            <h1 class="header-main__logo">Aurora</h1>
+            <form class="header__search" action="#">
+              <input
+                class="search__input"
+                type="text"
+                name="search"
+                placeholder="What are you looking for?"
+              />
+              <button class="search__button" type="submit" aria-label="Search">
+                <i class="fa fa-search fa-2x"></i>
+              </button>
+              <span class="search-close"></span>
+            </form>
+            <div class="header-main__user-nav">
+              <div class="user-login">
+                <a href="#" class="user-nav__link">Sign in</a>
+                <span class="user-nav__separator"> | </span>
+                <a href="#" class="user-nav__link">Register</a>
+              </div>
+              <a href="#" class="user-nav__cart" aria-label="Cart"
+                ><i class="fa fa-shopping-bag fa-2x"></i
+              ></a>
             </div>
-            <div class="header-main__bottom full-width">
-                <nav class="header-bottom__site-nav">
-                    <ul class="site-nav__list">
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">what’s new</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">women</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">accessories</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">kids</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">beauty</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">outlet</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <a href="#" class="site-nav__link">stories</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+          </div>
+          <div class="header-main__bottom full-width">
+            <nav class="header-bottom__site-nav">
+                <span class="site-nav__close"></span>
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">what’s new</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">women</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">accessories</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">kids</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">beauty</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">outlet</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link">stories</a>
+                </li>
+              </ul>
+              <ul class="user-login--mobile site-nav__list">
+                <li class="site-nav__item">
+                <a href="#" class="user-nav__link site-nav__link">Sign in</a>
+            </li>
+                <li class="site-nav__item"></li>
+                <a href="#" class="user-nav__link site-nav__link">Register</a>
+            </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-            <p class="main-img__text">Hello! Welcome to Aurora</p>
-        </div>    
+        <p class="main-img__text">Hello! Welcome to Aurora</p>
+      </div>
     </header>
     <section class="subscription">
         <h4 class="subscription__title visually-hidden">Subscription section</h4>
